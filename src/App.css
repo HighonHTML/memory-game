@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,p {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: #f3f3f3;
+  height: 100vh;
+  gap: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  background-color: rgb(13, 66, 97);
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+/* game manager */
+
+.game-manager {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+
+.game-manager>div {
+  background-color: white;
+  padding: 0.5em;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* scoreboard */
+
+.number-of-cards {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.number-of-cards>button {
+  background-color: rgb(13, 66, 97);
+  border: none;
+  color: white;
+  width: 3em;
+  padding: 0.4em;
+  border-radius: 5px;
+}
+
+.number-of-cards>button:hover {
+  background-color: rgb(14, 55, 78);
+  cursor: pointer;
+}
+
+/* cards */
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  justify-content: center;
+  gap: 50px;
+}
+
+.cards-container>.card{
+  width: 100px;
+  height: 100px;
+}
+
+.card>img{
+  width: 75px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.reset:hover{
+  cursor: pointer;
+}
