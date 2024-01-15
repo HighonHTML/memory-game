@@ -53,7 +53,6 @@ export default function MemeoryGame() {
 
   function reset() {
     setSet(new Set());
-    setBestScore(0)
     setScore(0);
   }
   
