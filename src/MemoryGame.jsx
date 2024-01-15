@@ -43,7 +43,8 @@ export default function MemeoryGame() {
     } else {
       console.log("gameover");
       setBestScore(bestScore > score ? bestScore : score);
-      reset();
+      setSet(new Set());
+      setScore(0);
     }
   }
 
@@ -53,6 +54,7 @@ export default function MemeoryGame() {
 
   function reset() {
     setSet(new Set());
+    setBestScore(0)
     setScore(0);
   }
   
