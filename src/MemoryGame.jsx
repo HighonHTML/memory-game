@@ -10,6 +10,7 @@ export default function MemeoryGame() {
 
   function handleNumberOfPokemons(n) {
     setNumberOfPokemons(n);
+    reset()
   }
 
   useEffect(() => {
